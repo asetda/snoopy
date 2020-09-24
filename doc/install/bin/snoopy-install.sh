@@ -151,14 +151,6 @@ else
         fi
     fi
 
-    # Check again
-    for PROGRAM in `echo "which $REQUIRED_PROGRAMS"`; do
-        if ! which $PROGRAM &> /dev/null; then
-            echo "SNOOPY INSTALL ERROR: '$PROGRAM' program not found!"
-            echo "SNOOPY INSTALL ERROR: Install it and rerun this installer."
-            exit 1
-        fi
-    done
 fi
 
 
